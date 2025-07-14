@@ -20,11 +20,9 @@ const isGreen = (color) => color === 'green';
 const isWhite = (color) => color === 'white';
 const isBlue = (color) => color === 'blue';
 const isOrange = (color) => color === 'orange';
-const not = (fn) => (...args) => !fn(...args);
 const equals = (a) => (b) => a === b;
 const isColor = (color) => (x) => x === color;
 const notColor = (color) => (x) => x !== color;
-const eq = (a) => (b) => a === b;
 const gte = (n) => (x) => x >= n;
 
 const countColor = (color) => (obj) => countBy(isColor(color))(Object.values(obj));
